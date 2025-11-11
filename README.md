@@ -10,7 +10,6 @@ A fully functional e-commerce shopping cart application built with ReactJS, feat
 - [Usage](#usage)
 - [Project Structure](#project-structure)
 - [Workflow](#workflow)
-- [AI Assistance](#ai-assistance)
 - [Future Enhancements](#future-enhancements)
 
 ---
@@ -145,23 +144,26 @@ Navigate to `http://localhost:5173`
 ## 📁 Project Structure
 
 ```
-Shopping_Cart/
-├── public/
-│   ├── index.html
-│   └── favicon.ico
-├── src/
-│   ├── App.js                 # Main application component
-│   ├── index.js               # Entry point
-│   ├── index.css              # Global styles
-│   └── components/
-│       ├── CartProvider.jsx   # Context provider (if separated)
-│       ├── ProductCard.jsx    # Product display component
-│       ├── CartItem.jsx       # Cart item component
-│       ├── CartSidebar.jsx    # Cart sidebar component
-│       └── ProductList.jsx    # Product listing component
-├── package.json
-├── README.md
-└── .gitignore
+Shopping Cart/
+├── 📂 public/
+│ ├── 🖼 shop.jpg
+│ └── 🧩 vite.svg
+│
+├── 📂 src/
+│ ├── 📂 assets/
+│ ├── 🎨 App.css
+│ ├── ⚛ App.jsx
+│ ├── 🎨 index.css
+│ └── ⚛ main.jsx
+│
+├── ⚙ .gitignore
+├── ⚙ eslint.config.js
+├── 🧱 index.html
+├── 📦 package-lock.json
+├── 📦 package.json
+├── 📘 README.md
+├── 🗂 shopping cart.zip
+└── ⚙ vite.config.js
 ```
 
 ### Key Files
@@ -268,60 +270,6 @@ graph TD
 
 ---
 
-## 🤖 AI Assistance
-
-This project was developed with assistance from **Claude AI (Anthropic)**. Below are the specific areas where AI support was utilized:
-
-### 1. **Initial Project Setup**
-- **AI Input**: Provided the complete assignment PDF requirements
-- **AI Output**: 
-  - Generated the entire React component structure
-  - Created the Context API implementation
-  - Set up the basic UI layout with Tailwind CSS
-
-### 2. **localStorage Implementation**
-- **AI Input**: Requested localStorage integration for cart persistence
-- **AI Output**:
-  - Implemented `useEffect` hooks to load cart data on mount
-  - Added automatic saving to localStorage on cart state changes
-  - Included JSON serialization/deserialization logic
-
-### 3. **Cart Sidebar Overlay Issue**
-- **AI Input**: Reported bug where background was blank when cart opened
-- **AI Output**:
-  - Fixed conditional rendering structure
-  - Implemented semi-transparent overlay backdrop
-  - Ensured product page remains visible behind cart sidebar
-
-### 4. **Product Filtering Feature**
-- **AI Input**: Requested category and price range filtering (bonus feature)
-- **AI Output**:
-  - Created filter state management
-  - Implemented dynamic category buttons
-  - Added price range slider with real-time filtering
-
-### 5. **Code Structure & Best Practices**
-- **AI Guidance on**:
-  - Component composition and separation of concerns
-  - React Hooks usage (useState, useEffect, useContext)
-  - Custom hook creation (useCart)
-  - Proper prop passing and state lifting
-
-### 6. **Documentation**
-- **AI Input**: Requested comprehensive README with architecture diagrams
-- **AI Output**:
-  - Created this complete README file
-  - Generated Mermaid diagrams for data flow and architecture
-  - Documented all features and workflows
-
-### Areas Implemented Without AI
-- Manual testing and bug identification
-- UI/UX refinements based on personal preferences
-- Product data selection (images, names, prices)
-- Color scheme adjustments
-
----
-
 ## 🎨 Design Decisions
 
 ### Why Context API?
@@ -389,14 +337,13 @@ This project was developed with assistance from **Claude AI (Anthropic)**. Below
 
 ## 📄 License
 
-This project is created for educational purposes as part of the Vistora AI Web Development Assignment.
+This project is created as a part of the Vistora AI Web Development Assignment.
 
 ---
 
 ## 🙏 Acknowledgments
 
 - Vistora AI for the assignment opportunity
-- Anthropic's Claude AI for development assistance
 - Unsplash for product images
 - Lucide React for icons
 - Tailwind CSS for styling framework
